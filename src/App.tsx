@@ -8,11 +8,13 @@ import SignIn from "./pages/SignIn"
 import SignUp from "./pages/SignUp"
 import About from "./pages/About"
 import Profile from "./pages/Profile"
+import Header from "./Components/Header"
 
 export default function App() {
   return (
     // Wraps the routing functionality around the entire application.
     <BrowserRouter>
+      <Header />
       {/* Defines the routes for the application. */}
       <Routes>
         {/* Defines a specific route within the `<Routes>` component. */}
