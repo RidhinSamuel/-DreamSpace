@@ -10,7 +10,8 @@ export default {
         primary: '#89A8B2',
         secondary: '#B3C8CF',
         third:'#E5E1DA',
-        fourth:'#F1F0E8'
+        fourth:'#F1F0E8',
+        fifth:"#FFFFFF"
       }
     },
   },
