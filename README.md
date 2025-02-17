@@ -39,3 +39,54 @@ git push -u origin main
 mkdir api client
 npm init -y
 npm install express
+```
+
+### Step 5: Set Up Backend with Node.js, Express, and Nodemon
+1. Navigate to the `api` folder:
+    ```bash
+    cd api
+    ```
+
+2. Initialize a Node.js project:
+    ```bash
+    npm init -y
+    ```
+
+3. Install Express and Nodemon:
+    ```bash
+    npm install express
+    npm install nodemon --save-dev
+    ```
+
+4. Create `app.js`:
+    ```javascript
+    import express from 'express';
+
+    const app = express();
+
+    app.listen(3000, () => {
+      console.log("Server is running on port 3000");
+    });
+    ```
+
+5. Update [package.json](http://_vscodecontentref_/3) to include `nodemon` in `devDependencies` and add `dev` script:
+    ```json
+    "scripts": {
+      "dev": "nodemon app.js",
+      "start": "node app.js"
+    }
+    ```
+
+### Step 6: Install Mongoose and Connect to MongoDB
+1. Install Mongoose:
+    ```bash
+    npm install mongoose
+    ```
+
+2. Create a [.env](http://_vscodecontentref_/4) file in the [api](http://_vscodecontentref_/5) folder with the following content:
+    ```dotenv
+    CONNECT="save connection string here"
+    ```
+
+3. Update `app.js` to connect to MongoDB
+
