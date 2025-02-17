@@ -6,7 +6,6 @@ yarn-debug.log*
 yarn-error.log*
 pnpm-debug.log*
 lerna-debug.log*
-
 # Dependency directories
 node_modules
 .vite
@@ -17,6 +16,7 @@ dist-ssr
 
 # Local environment files
 *.local
+.env
 
 # Editor directories and files
 .vscode/*

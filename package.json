@@ -19,9 +19,12 @@
   "homepage": "https://github.com/RidhinSamuel/-DreamSpace#readme",
   "description": "",
   "dependencies": {
-    "express": "^4.21.2"
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "mongoose": "^8.10.1"
   },
   "devDependencies": {
+    "morgan": "^1.10.0",
     "nodemon": "^3.1.9"
   }
 }
