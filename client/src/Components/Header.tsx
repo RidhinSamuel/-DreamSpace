@@ -3,7 +3,7 @@ import { Link } from "react-router-dom"
 export default function Header() {
     return (
         <div className="p-2">
-            <header className='bg-third shadow-md rounded-full'>
+            <header className='bg-fifth  rounded-full'>
                 <div className="flex justify-between items-center max-w-6xl mx-auto p-4">
                     <Link to="/">
                         <h1 className='font-bold text-sm sm:text-xl flex flex-wrap'>
@@ -11,9 +11,9 @@ export default function Header() {
                             <span className='text-secondary'>Space</span>
                         </h1>
                     </Link>
-                    <form action="" className='bg-slate-50 p-3 rounded-md flex items-center' >
-                        <input type="text" name="" id="" placeholder='Search...' className='bg-transparent focus:outline-none w-24 sm:w-64' />
-                        <FaSearch className="text-slate-400" />
+                    <form action="" className=' text-primary p-3 rounded-md flex items-center  border-secondary border' >
+                        <input type="text" name="" id="" placeholder='Search...' className='bg-transparent focus:outline-none w-24 sm:w-64 ' />
+                        <FaSearch />
                     </form>
                     <ul className="flex gap-4">
                         <Link to="/"><li className="hidden sm:inline text-primary hover:text-secondary">Home</li></Link>
