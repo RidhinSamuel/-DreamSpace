@@ -3,11 +3,11 @@ import { Link } from "react-router-dom"
 export default function Header() {
     return (
         <div className="p-2">
-            <header className='bg-fifth  rounded-full'>
+            <header className='bg-fifth  '>
                 <div className="flex justify-between items-center max-w-6xl mx-auto p-4">
                     <Link to="/">
                         <h1 className='font-bold text-sm sm:text-xl flex flex-wrap'>
-                            <span className="text-primary ">Dream</span>
+                            <span className="text-fourth ">Dream</span>
                             <span className='text-secondary'>Space</span>
                         </h1>
                     </Link>
