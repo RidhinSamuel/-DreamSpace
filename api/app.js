@@ -5,7 +5,7 @@ import dotenv from 'dotenv';
 import morgan from 'morgan';
 // importing routes
 import userRouter from './routes/user.routes.js';
-import  {signUpRouter}  from './routes/auth.routes.js';
+import  AuthRouter  from './routes/auth.routes.js';
 // env configuration
 dotenv.config();
 // creating express object
@@ -25,7 +25,7 @@ mongoose.connect(process.env.CONNECT)
 mongoose.set('debug',true);
 //using routes
 app.use("/api/user",userRouter); //testing route
-app.use("/api/auth",signUpRouter) // sign up route
+app.use("/api/auth",AuthRouter); // sign up route
 
 app.use((error,req,res,next)=>{
     const statusCode=error.statusCode || 500;
