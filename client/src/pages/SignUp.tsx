@@ -3,9 +3,9 @@ import { ChangeEvent, FormEvent, useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 
 interface SignUpData{
-  username:string;
-  email:string;
-  password:string;
+  username:string,
+  email:string,
+  password:string
 }
 function SignUp() {
   const navigate=useNavigate();
